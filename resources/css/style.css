@@ -27,6 +27,7 @@ html, body{
   position: relative;   /* so I used this  and setting top below to give me a top margin to the logo-navbar */
   top: 1em;
   padding: 1rem 0;
+  margin-bottom: 10rem;
 }
 
 .logo-navbar img{
@@ -41,4 +42,19 @@ html, body{
   margin-right: 2rem;
   margin-left: 0;
 
+}
+
+.banner{
+   text-align: right;
+}
+
+.banner span{
+    display: inline-block;
+  background-color: white;
+  color: gray;
+  padding: 1.5rem 5rem;
+  width:auto;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
 }
