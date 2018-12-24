@@ -58,7 +58,7 @@ html, body{
   line-height: 1.2;
   font-weight: bold;
 }
-
+/* I made the service-icon a flexcontainer to give me a nice row layout */
 .services{
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ html, body{
 .service-option.delivery img{
   width: 5rem;
 }
-
+/* I made the service-icon a flexcontainer because they do it in the SecretAgent supply class and it works but I am not sure why */
 .service-icon{
   display: flex;
   justify-content: center;
