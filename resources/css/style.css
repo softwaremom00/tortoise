@@ -26,11 +26,12 @@ html, body{
   margin-top:0;/* when I give this a value it moves the entire .main container down .. do not understand why */
   position: relative;   /* so I used this  and setting top below to give me a top margin to the logo-navbar */
   top: 1em;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 }
 
 .logo-navbar img{
   padding-right: 1rem;
+  padding-left: 2rem;
   height: 1rem;
 }
 
