@@ -58,16 +58,28 @@ html, body{
   line-height: 1.2;
   font-weight: bold;
 }
-/* I made the service-icon a flexcontainer to give me a nice row layout */
+
+/* Services Icon Section */
+
+/* I made the services class a flexcontainer to give me a nice row layout */
+
 .services{
   display: flex;
   justify-content: center;
   margin-top: 3rem;
 }
 
+
+/* This flex container was added to center the text under the icons */
+.service-option{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .service-option.exams img{
   width: 3.5rem;
-  padding-right: 6rem;
+  margin-right: 3rem;
 }
 
 .service-option.fittings img{
@@ -79,17 +91,34 @@ html, body{
   width: 5rem;
 }
 /* ISSUE: I made the service-icon a flexcontainer because they do it in the SecretAgent supply class and it works but I am not sure why */
+
 .service-icon{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 8rem;
-  padding-right: 6rem;
 }
 
-.description {
-  text-align: center;    /* ISSUE: need to center text below the icons and it is not centered */
+
+
+.description p{
+  text-align: center;
+  line-height: .2rem;
+  font-weight: bold;
+
 }
+
+.fittings p{
+  padding-right: 5rem;
+
+}
+
+.exams p{
+  padding-right: 3rem;
+
+}
+
+/* Business Information Section */
 
 .business-info{
    margin-top: 3rem;
