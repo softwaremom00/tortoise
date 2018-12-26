@@ -17,6 +17,9 @@ html, body{
   background-position: center;
   height: 30rem;
 }
+
+
+
 .logo-navbar{
   display: flex;
   justify-content: space-between;
@@ -28,20 +31,36 @@ html, body{
   top: 1em;
   padding: 1rem 0;
   margin-bottom: 10rem;
+  border: 1px solid blue;
 }
+
+.logo{
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
 
 .logo-navbar img{
   padding-right: 1rem;
   padding-left: 2rem;
-  height: 1rem;
+  height: 1.5rem;
 }
 
-.logo-navbar span{
+.logo-navbar .mobile-logo{
+  display: none;
+}
+
+.logo-navbar .desktop-nav span{
   display: inline-block;
   font-size:1rem;
   margin-right: 2rem;
   margin-left: 0;
 
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .banner{
@@ -57,6 +76,76 @@ html, body{
   font-size: 2rem;
   line-height: 1.2;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px){
+
+  .container{
+    width: 100%;
+  }
+
+  .logo-navbar{
+      top:0;
+      margin-bottom: 5rem;
+    }
+
+.main{
+    height: 22rem;
+}
+
+.banner span{
+  font-size: 1.33rem;
+  padding: .75rem 4rem;
+  margin-right: 2rem;
+}
+
+}
+
+/*** modifications for phones */
+
+@media only screen and (max-width: 450px){
+
+    .main{
+      background-position: 20%;
+      height: 17rem;
+    }
+
+    .logo-navbar{
+      justify-content: space-around;
+      margin-bottom: 9rem;
+
+    }
+    .logo-navbar .logo{
+          display:none;
+      }
+
+    .logo-navbar .mobile-logo{
+        display: block;
+      }
+/* hide the desktop navbar and replace with mobile navbar */
+    .desktop-nav{
+      display: none;
+    }
+    .mobile-nav{
+      display:inline-block;
+      text-align: left;
+
+    }
+
+    .banner span{
+      text-align: center;
+      font-size: 1rem;
+      width: 100%; 
+      margin-right: 0;
+      margin-left: 0;
+      padding-top:1rem;
+      padding-bottom: 1rem;
+      padding-left: 0;
+      padding-right: 0;
+
+    }
+
+
 }
 
 /* Services Icon Section */
@@ -153,6 +242,41 @@ html, body{
   display:flex;
   flex-direction: column;
   width: 35%;
+}
+
+@media only screen and (max-width: 450px){
+
+  .services{
+    border: 2px solid blue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-option.exams img{
+    width: 3.5rem;
+    margin-right: auto;
+  }
+
+  .business-info{
+     margin-top: 3rem;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .business-info p{
+    text-align: left;
+    font-size: .77rem;
+
+  }
+  .philosophy{
+    width: 90%;
+  }
+  .appointments{
+    width: 90%;
+  }
+
 }
 /* ISSUE: I made the copyright a flex container to get the text to sit next to the icon.. is ithis necessary */
 
