@@ -294,6 +294,15 @@ html, body{
     width: 100%;
   }
 
+    .copyright span{
+      display: none;
+    }
+
+  .copyright{
+  justify-content: center;
+
+  }
+
 }
 /* ISSUE: I made the copyright a flex container to get the text to sit next to the icon.. is it necessary */
 
